@@ -95,3 +95,35 @@ console.log(price);
 
 
 // protection methods in objects.
+
+const object = {type:"Fiat", model:"500", color:"white"};
+
+// Prevents adding object properties
+Object.preventExtensions(object)
+object.type="BMW";
+console.log(object)
+
+// Returns true if properties can be added to an object
+Object.isExtensible(object)
+object.type="Mercedes";
+console.log(object)
+
+// Prevents adding and deleting object properties
+Object.seal(object)
+object.type="Porsche";
+console.log(object);
+
+// Returns true if object is sealed
+Object.isSealed(object)
+object.type="lambo";
+console.log(object)
+
+// Prevents any changes to an object
+Object.freeze(object)
+object.type="funti";
+console.log(object)
+
+// Returns true if object is frozen
+Object.isFrozen(object)
+object.type="funti";
+console.log(object,"129")
