@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium";
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+    height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgoldenrod;
+  position: relative;
+}
+.cursor{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(255, 255, 255);
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    position: absolute;
+    transition: all linear 0.2s;
+}
