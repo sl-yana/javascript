@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DOM To-Do List</title>
+  <style>
+    .completed {
+        text-decoration: line-through;
+      color: black;
+      background-color: rgba(41, 126, 44, 0.697);
+    }
+    .highlight {
+      background-color: red;
+    }
+    li {
+      cursor: pointer;
+      padding: 5px;
+      margin: 3px 0;
+      border: 1px solid #ccc;
+      font-size: 20px;
+    }
+    input{
+        height: 30px;
+        width: 300px;
+        font-size: 18px;
+    }
+    button{
+        height: 30px;
+        width: 100px;
+        background-color: cadetblue;
+        color:black;
+        font-size: 18px;
+    }
+    
+  </style>
+</head>
+<body>
+  <h1>My To-Do List</h1>
+
+  <input type="text" id="taskInput" placeholder="Enter a task" />
+  <button id="addBtn">Add Task</button>
+
+  <ul id="taskList"></ul>
+
+  <script src="Todo.js"></script>
+</body>
+</html>
